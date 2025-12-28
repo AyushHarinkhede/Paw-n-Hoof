@@ -1,17 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import ContactUs from './Components/ContactUs'
+import "./App.css";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import Adopt from "./Components/Adopt";
+import ContactUs from "./Components/ContactUs";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <ContactUs/>
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Navigate to="/adopt" replace />} />
+        <Route path="/adopt" element={<Adopt />} />
+        <Route path="/contact" element={<ContactUs />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
