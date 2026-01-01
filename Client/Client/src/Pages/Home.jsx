@@ -4,6 +4,7 @@ import Subsec from '../Components/Subsec.jsx'
 import Footer from '../Components/Footer.jsx'
 import Adopt from '../Components/Adopt.jsx'
 import ContactUs from '../Components/ContactUs.jsx'
+import Login from '../Components/Login.jsx' 
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
       <Adopt />
       <ContactUs />
       <Footer />
+      <Login />
     </>
   )
 }
