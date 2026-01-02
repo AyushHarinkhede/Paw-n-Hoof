@@ -5,6 +5,7 @@ import Footer from '../Components/Footer.jsx'
 import Adopt from '../Components/Adopt.jsx'
 import ContactUs from '../Components/ContactUs.jsx'
 import Login from '../Components/Login.jsx' 
+import Story from '../Components/Story.jsx'
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <Herosec />
       <Subsec />
       <Adopt />
+      <Story/>
       <Login />
       <ContactUs />
       <Footer />
