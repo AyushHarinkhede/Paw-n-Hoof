@@ -10,7 +10,7 @@ const serverProcess = spawn('node', ['index.js'], {
   cwd: join(__dirname, 'Server'),
   stdio: 'inherit',
   shell: true
-});
+}); 
 
 // Start client
 const clientProcess = spawn('npm', ['run', 'dev'], {
