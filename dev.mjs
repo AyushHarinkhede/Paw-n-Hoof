@@ -17,7 +17,7 @@ const clientProcess = spawn('npm', ['run', 'dev'], {
   cwd: join(__dirname, 'Client'),
   stdio: 'inherit',
   shell: true
-});
+}); 
 
 // Handle process termination
 process.on('SIGINT', () => {
