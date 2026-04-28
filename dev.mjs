@@ -8,7 +8,7 @@ const __dirname = dirname(__filename);
 // Start server
 const serverProcess = spawn('node', ['index.js'], {
   cwd: join(__dirname, 'Server'),
-  stdio: 'inherit',
+  stdio: 'inherit', 
   shell: true
 }); 
 
